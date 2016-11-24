@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  myvpn:
+    image: lomo/openconnect
+    privileged: true
+    network_mode: host
+    environment:
+    - PASSWORD=<PASSWORD>
+    command:  -u <USER> <IP> 
+

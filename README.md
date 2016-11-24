@@ -2,9 +2,11 @@
 
 This image is for running Openconnect VPNs in containers. For simple VPN setup:
 
+
 	docker run -ti --privileged --network=host lomo/openconnect <OPENCONNECT_ARGS>
 
-Replace \<OPENCONNECT\_ARGS\> with your openconnect options. To pass password
+
+Replace <OPENCONNECT_ARGS> with your openconnect options. To pass password
 automatically, set your password to environment variable PASSWORD and option
 --passwd-on-stdin is added automatically. for example:
 
@@ -12,6 +14,7 @@ automatically, set your password to environment variable PASSWORD and option
 
 
 For running with docker-compose:
+
 
 	version: '2'
 
